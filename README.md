@@ -51,7 +51,7 @@ kwarg to graph.query can be used to fill in variables that are known:
 # ./examples/preparedquery.py
 
 import rdflib
-from rdflib_sparql.processor import prepareQuery
+from rdflib.plugins.sparql.processor import prepareQuery
 
 q = prepareQuery(
     'select ?s where { ?person <http://xmlns.com/foaf/0.1/knows> ?s .}')
